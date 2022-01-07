@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="">
+    <title>New Forms Attributes </title>
+    <style>
+        body {
+            background-color: lightblue;
+        }
+
+        #register-form {
+            width: 300px;
+            background-color: white;
+            padding: 24px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .input-label {
+            margin: 12px 0 4px 0;
+        }
+        .input-item {
+            width: 100%;
+        }
+        #terms-check {
+            margin-top: 12px;
+            margin-bottom: 18px;
+
+        }
+    </style>
+</head>
+<body>
+
+<!--Using pLace holders instead of titles and use the focus when landing the page a input is selected in focus-->
+
+<h1 style="text-align: center">Signup</h1>
+
+<form  id="register-form" action="" method="get">
+<!--    using required as a must to be register-->
+    <div>
+        <input class="input-item" type="text" name="full-name" placeholder="Full Name" autofocus required>
+    </div>
+    <div>
+        <input class="input-item" type="email" name="email" placeholder="Email" required>
+    </div>
+    <div>
+        <p class="inout-label">Age</p>
+        <input type="number" name="age" min="18" max="46">
+    </div>
+    <div>
+   <!--     using maxlenght for the password-->
+        <p class="input-label">Password:</p>
+        <input class="input-item" type="password" name="password" required maxlength="8">
+    </div>
+    <div>
+        <p class="input-label">Confirm Password:</p>
+        <input class="input-item" type="password" name="confirm-password" required maxlength="8">
+    </div>
+    <div>
+        <p class="input-label">Gender:</p>
+        <input  type="radio" name="male" value="male"> Male
+        <input type="radio" name="female" value="female"> Female
+        <input type="radio" name="other" value="other"> Other
+    </div>
+  <!--  using multiple attribute to be able to select different options. All the dropdown list is visible -->
+    <div>
+        <p class="input-label">Security Question:</p>
+        <select class="input-item" name="security-question" multiple> <br>
+            <option value="first-pet-name">What was your first pet name?</option>
+            <option value="first-job">What was your first job?</option>
+            <option value="nick-name">What is your nick-name?</option>
+        </select>
+    </div>
+    <div>
+        <textarea class="input-item" name="answer" id="" cols="30" rows="6"></textarea>
+    </div>
+    <div>
+        <input id="terms-check" type="checkbox" name="terms-conditions" value="accept">
+        I agree to accept terms and conditions <br>
+    </div>
+    <input type="submit" value="Register">
+</form>
+</body>
+</html>

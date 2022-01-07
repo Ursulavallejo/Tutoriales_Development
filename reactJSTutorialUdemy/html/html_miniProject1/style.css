@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: paleturquoise;
+}
+#topBar{
+    background-color: cadetblue;
+    padding: 0.5em;
+    margin: 0;
+}
+nav ul {
+    display: flex;
+}
+.menu-item {
+    font-size: 18px;
+    font-style: oblique;
+    padding: 0.5em 1em;
+    font-weight: 900;
+    text-decoration: none;
+    list-style: none;
+}
+#list-heading {
+    font-size: 20px;
+    padding-left: 24px;
+}
+.food-list-item {
+    font-size: 20px;
+}
+.food-image {
+    width: 300px;
+    height: 300px;
+}
+.food-wrapper {
+    text-align: center;
+}
