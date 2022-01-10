@@ -1,27 +1,32 @@
-import {Route, Router} from "react-router-dom";
+import { BrowserRouter, Route} from "react-router-dom";
 
 import AllMeetupsPage from "./pages/AllMeetups";
 import NewMeetupPage from "./pages/NewMeetup";
 import FavoritesPage from "./pages/Favorites";
 
 function App() {
-  return ( <div>
-          <Router>
+  return (
+          <BrowserRouter>
+
         <Route path='/'>
             <AllMeetupsPage/>
         </Route>
-          </Router>
-      <Router>
+
+          </BrowserRouter>
+/*    <BrowserRouter>
+      <Routes>
           <Route path='/new-meetup'>
               <NewMeetupPage/>
           </Route>
-      </Router>
-      <Router>
+      </Routes>
+    </BrowserRouter>
+    <BrowserRouter>
+      <Routes>
           <Route path='/favorites'>
               <FavoritesPage/>
           </Route>
-      </Router>
-      </div>
+      </Routes>
+    </BrowserRouter>*/
   );
 }
 
