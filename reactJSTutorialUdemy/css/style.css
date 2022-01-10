@@ -1,0 +1,51 @@
+/*TEXT style*/
+
+h1 {
+    color: blue;
+    text-align: center;
+    font-style: italic;
+    text-decoration: underline;
+/*    text-decoration: overline;*/
+  /*  text-decoration: line-through;*/
+  /*  text-decoration: none;*/
+    text-transform: uppercase;
+   /* text-transform: lowercase; */
+/*     text-transform: capitalize; */
+}
+/*letter spacing and word-spacing can be also use negative values*/
+p {
+    color: brown;
+    text-align: justify;
+    font-weight: 600;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    line-height: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*BORDERS STYLE*/
+
+/*1st option to add border:*/
+/*
+#second-paragraph {
+    !*border-style: dotted;*!
+    !*border-style: dashed;*!
+    !*border-style: solid;*!
+    border-top-style: solid;
+    border-right-style: dashed;
+    border-bottom-style: dotted;
+    border-left-style: double;
+    border-color: red;
+    border-width: 3px;
+}*/
+
+/*other option to add border*/
+#second-paragraph {
+    border: 4px solid blue;
+/*    border-radius: 14px;*/
+}
+
+/*MARGIN AND PADDING*/
+#second-paragraph {
+    padding: 16px;
+}
