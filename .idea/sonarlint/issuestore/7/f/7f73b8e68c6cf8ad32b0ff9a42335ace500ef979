@@ -1,0 +1,6 @@
+
+UWeb:AvoidCommentedOutCodeCheck"Remove this commented out code.(Õ±ó¤ûÿÿÿÿ8§ÓóÈã/
+i$Web:FlashUsesBothObjectAndEmbedCheck""-Surround this <embed> tag by an <object> one.(ìŸûÿÿÿÿ8ª²´Éã/
+K	Web:S1827("/Remove this deprecated "frameborder" attribute.(æï€Æ8°‹ÅÉã/
+ZWeb:FrameWithoutTitleCheck("-Add a "title" attribute to this <iframe> tag.(æï€Æ8±‹ÅÉã/
+K	Web:S1827+"/Remove this deprecated "frameborder" attribute.(·íÈË8¥³ŞÉã/
