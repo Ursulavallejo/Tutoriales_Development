@@ -55,8 +55,6 @@ x
 HreactCrashCourse/maximiliamTutorial/react-course-step2/package-lock.json,5\a\5a08907cafb50ff1a63c275e798f106260caea8a
 m
 =reactCrashCourse/maximiliamTutorial/react-course/src/index.js,4\d\4d5de15c3eabf6debaa3473300132a141de629fe
-}
-MreactCrashCourse/maximiliamTutorial/react-course-step2/src/pages/NewMeetup.js,2\4\24cfa0f60eefc998d845aa22f59a7e9ae58ed71e
 k
 ;reactCrashCourse/maximiliamTutorial/react-course/src/App.js,a\d\add9258625aa4f02b8b9eb50363dcde3db4f379b
 x

@@ -1,6 +1,7 @@
+import { useState, useEffect} from "react";
 import MeetupList from "../components/meetups/MeetupList";
 
-const DUMMY_DATA = [
+/*const DUMMY_DATA = [
     {
         id: 'm1',
         title: 'This is a first meetup',
@@ -19,13 +20,36 @@ const DUMMY_DATA = [
         description:
             'This is a first, amazing meetup which you definitely should not miss. It will be a lot of fun!',
     },
-];
+];*/
 
 function AllMeetupsPage(){
+   const [isLoading, setIsLoading] = useState(true);
+    const [loadedMeetups, setLoadedMeetups]= useState([]);
+    useEffect(() => {
+        setIsLoading(true);
+        fetch (
+            'https://react-getting-started-1a174-default-rtdb.europe-west1.firebasedatabase.app/meetups.json')
+            .then((response) => {
+                return response.json();
+            })
+            .then((data) => {
+                setIsLoading(false);
+                setLoadedMeetups(data);
+            });
+    },[]);
+
+        if (isLoading) {
+            return (
+                <section>
+                    <p>Loading ....</p>
+                </section>
+            );
+        }
 return (
     <section>
         <h1>All Meetups</h1>
-        <MeetupList meetups={DUMMY_DATA}/>
+        <MeetupList meetups={loadedMeetups}/>
+{/*        <MeetupList meetups={DUMMY_DATA}/>*/}
 {/*        <ul>
             {DUMMY_DATA.map((meetup) => {
                 return <li key={ meetup.id }>{ meetup.title }</li>;
