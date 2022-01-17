@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.image-item {
+    width: 250px;
+    height: 180px;
+}
+/* Div has by default the display value  set to block*/
+
+.image-wrapper {
+    display: inline;
+}
+
+/*when use Span by default the display value  set to in line*/
+.menu-item{
+    display: block;
+    /*the below hide what is inside the element and remove the space that has:*/
+    /*display: none;*/
+    /*the below hide the element to keep the space has on the page:*/
+    /*visibility: hidden;*/
+}
