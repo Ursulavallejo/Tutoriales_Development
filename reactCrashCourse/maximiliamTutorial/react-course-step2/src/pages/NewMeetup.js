@@ -14,7 +14,7 @@ function NewMeetupPage(){
               }
         }
        /* Give me error :history.replace is not a function*/
-        ).then( () => { history.replace('/');
+        ).then( () => { history('/');
         });
     }
     return (<section>
