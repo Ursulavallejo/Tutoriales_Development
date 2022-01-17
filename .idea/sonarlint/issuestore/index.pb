@@ -31,8 +31,6 @@ V
 &reactJSTutorialUdemy/html/svg/line.svg,d\4\d491d03e1d46d492a79862cf7aee797afb6efe6f
 [
 +reactJSTutorialUdemy/html/svg/introSvg.html,1\9\19ededd5252895f943a2b4a13917b308db2d50d8
-S
-#reactJSTutorialUdemy/css/index.html,e\0\e0ec8096b60c82f7a376e08ac553b676d6dfd6d1
 r
 BreactCrashCourse/maximiliamTutorial/react-course/package-lock.json,b\4\b4dafc23a6f8c7743be4a90e3514a6d4feb2437c
 n
@@ -91,5 +89,3 @@ UreactCrashCourse/maximiliamTutorial/react-course-step2/src/store/favorites-cont
 NreactCrashCourse/maximiliamTutorial/react-course-step2/src/pages/AllMeetups.js,7\1\71eb9657ab4c3059e57912780a5900852677964a
 g
 7reactJSTutorialUdemy/html/tables_miniProject2/style.css,8\e\8ef1084bd874f6923882cda44f32e8ba5c91d9a4
-R
-"reactJSTutorialUdemy/css/style.css,6\d\6d0b7c60efc4d9f2f4bcab96e57630f534683d0b
