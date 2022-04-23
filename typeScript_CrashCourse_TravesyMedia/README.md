@@ -97,4 +97,9 @@ tsc.cmd   / to compile what is on teh files and will change var to let in the JS
 node index
 ```
 
+-REACT > TS
+```shell
+npx create-react-app . --template typescript
+```
+
 

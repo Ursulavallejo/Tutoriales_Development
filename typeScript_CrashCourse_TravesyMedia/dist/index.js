@@ -47,3 +47,49 @@ const user = {
     id: 1,
     name: 'John'
 };
+//-------------------------------
+// Type Assertion : tell the compiler to treat an entity as a different type
+let cid = 1;
+// let customerId =<number> cid
+// customerId = true  // give error as is a boleen
+let customerId = cid;
+// Functions
+function addNum(x, y) {
+    return x + y;
+}
+console.log(addNum(1, 2));
+// Void
+function log(message) {
+    console.log(message);
+}
+log(2);
+const user1 = {
+    id: 1,
+    name: 'John'
+};
+const add = (x, y) => x + y;
+const sub = (x, y) => x - y;
+// Classes:   acces modifiers: Id / name can be public ( by default), private ( acces within the class), protected (you can acces from the class or extenden ones).
+class Person {
+    constructor(id, name) {
+        this.id = id;
+        this.name = name;
+    }
+    register() {
+        return `${this.name} is now registered`;
+    }
+}
+const brad = new Person(1, 'Brad Traversy');
+const mike = new Person(2, 'Mike Jordan');
+console.log(brad.register());
+// console.log(brad, mike)
+// Extending Classes
+class Employee extends Person {
+    constructor(id, name, position) {
+        super(id, name);
+        this.position = position;
+    }
+}
+const emp = new Employee(3, 'Shawn', 'Developer');
+console.log(emp.name);
+console.log(emp.register());
