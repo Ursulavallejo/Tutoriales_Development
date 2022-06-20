@@ -8,6 +8,8 @@
 
 <hr>
 <!-- etiquetas de parrafo-->
+<h2>Etiquetas de párrafo:</h2>
+<p>Producen un salto de línea.</p>
 
 <p class="ejemplo" id="principal">
     Un ejemplo de texto. <br>
@@ -21,6 +23,9 @@
 </p>
 <hr>
 <!-- etiquetas de encabezado-->
+<h2>Etiquetas de encabezado:</h2>
+<p>Producen un salto de línea.</p>
+<br>
 <h1>Encabezado primer nivel: Usualmente se utiliza solo una vez en el encabezado</h1>
 <h2>Encabezado segundo nivel</h2>
 <h3>Encabezado tercero nivel</h3>
@@ -28,10 +33,10 @@
 <h5>Encabezado quinto nivel</h5>
 <h6>Encabezado sexto nivel</h6>
 <hr>
-<!-- etiquetas de valor semantico // si solo se quiere por estilo aplicar CSS-->
-<h2>Etiquetas de valor semantico:</h2>
+<!-- etiquetas de valor semántico // si solo se quiere por estilo aplicar CSS-->
+<h2>Etiquetas de valor semántico:</h2>
 <p>Es una meta información que sirve para los navegadores y buscadores para entender nuestros contenidos y sabes cuáles son más importantes que otros.</p>
-
+<p>Estas no producen un cambio de línea y están pensadas para trozos de texto.</p>
 <h3>em:</h3>
 <p>podemos dar <em>énfasis</em> a una palabra en concreto. Se renderiza en el navegador por defecto como una cursiva.  </p>
 
@@ -46,11 +51,115 @@
 
 <h1>Este es un titular de primer nivel</h1>
 
-<p>Esto es un ejemplo <br> con un salto</p>
+<p>Esto es un ejemplo <br> con un
+<p>en el tag de imagen el "alt" de texto alternativo que lo lee un lector de pantalla, que es un programa que utilizan las personas invidentes.  </p>
+<img src="imageDog.jpg" alt="Perro Fox Terrier">
+
+salto</p>
 
 <p>Esto es un ejemplo con <strong>la etiqueta strong</strong></p>
 
-<p>Esto es un ejemplo som <em>énfasis</em></p>
+<p>Esto es un ejemplo som <em>énfasis (ñ)</em></p>
+
+<hr>
+<!-- etiquetas de imágenes y enlaces>-->
+
+<h2>Etiquetas de imágenes y enlaces:</h2>
+<p>No producen salto de linea</p>
+
+<h3>Imágenes: tag que no se cierra y solo contiene la imagen / link archivo interno y link externo</h3>
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/01_Wire_Fox_terrier.jpg/1280px-01_Wire_Fox_terrier.jpg" alt="Perro Fox Terrier">
+<img src="imageDog.jpg" alt="Perro Fox Terrier">
+
+<hr>
+<h3> Etiqueta a: "a href" hace una referencia a otro vínculo html/ url por ejemplo las dos imágenes que hemos usado anteriormente, pero se crea su respectiva página html</h3>
+
+<p>Ejemplo:</p>
+
+<h1>Foto o Pintura?</h1>
+
+<a href="paginas/perroFoto.html">Foto url</a> o
+
+<a href="paginas/perroFoto.html">Pintura archivo</a>
+
+<hr>
+<h3> Se pueden usar los enlaces para vincular diferentes secciones de una misma página usando los id. </h3>
+
+<p>Id es un atributo especial y puede haber uno de ese tipo en toda la página, es decir no puede haber otros elementos con el mismo id de contacto , solo hay uno.
+Por esto puedo usar una etiqueta Href, en lugar de ponerle una ruta o un archivo </p>
+
+
+<h3 id="contacto"> Datos de Contacto</h3>
+<a href="#contacto">Contacto</a>
+
+<hr>
+
+<h2>Etiquetas de Bloque: </h2>
+
+<h3>DIV:</h3>
+<p> Son parecidos a los Span pero para bloques de contenido y no dan ningún valor semántico.</p>
+<p>Sirve para agrupar partes de nuestra web y para asignar clases y estilos. Con esta hacemos la mayor parte de estructuras de nuestra web.</p>
+
+<p>Ejemplo:</p>
+
+<div class="destacado">
+    <h1>Titular</h1>
+    <p>Contenido</p>
+</div>
+
+<h3>UL:</h3>
+<p>Etiqueta de listado (unordered list). Solo puede contener adentro un tipo de etiqueta LI (list Item) pero dentro del li si puede existir otro contenido pero directamente desde el UL solo el Li.</p>
+
+<p>Ejemplo:</p>
+
+<h1>Receta de Pan</h1>
+<h2>Ingredientes:</h2>
+<ul>
+    <li>Agua</li>
+    <li>Harina</li>
+    <li>Levadura</li>
+    <li>Sal</li>
+</ul>
+
+<p>Ejemplo en los enlaces de una navegación:</p>
+
+<ul>
+    <li><a href="...">Inicio</a></li>
+    <li><a href="...">Productos</a></li>
+    <li><a href="...">Blog</a></li>
+    <li><a href="...">Contacto</a></li>
+</ul>
+
+<h3>OL:</h3>
+<p>Etiqueta de listado (ordered list)que va numerada. Solo puede contener adentro un tipo de etiqueta LI (list Item) pero dentro del li si puede existir otro contenido pero directamente desde el OL solo el Li.</p>
+
+<p>Ejemplo:</p>
+
+<h1>Pasos</h1>
+<ol>
+    <li>Mezclar</li>
+    <li>Amasar</li>
+    <li>Hornear</li>
+</ol>
+
+<hr>
+
+<h2>Etiquetas de Documento: son necesarios para que la página web muestre nuestro contenido correctamente. </h2>
+
+
+<h3>Etiqueta HTML:</h3>
+<p> Se ponen al inicio y al final de nuestro documento HTML.</p>
+
+<h3>Etiqueta Body:</h3>
+<p>Nos permite indicar que parte de todo el documento HTML es el contenido como tal. </p>
+
+<h3>Etiqueta Head:</h3>
+<p>Nos permite incluir archivos que son meta información a archivos necesarios para mostrar la página, como puede ser la CSS o similar.</p>
+
+<h3>Etiqueta Title:</h3>
+
+<p>Le da un título a nuestra página y se ve en la pestaña del browser.</p>
 
 </body>
 </html>
