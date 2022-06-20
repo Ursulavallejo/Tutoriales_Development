@@ -118,5 +118,53 @@ div.principal{
     color:  rgb(255, 0, 0, 0.4);
 }
 
+/* Pseudo-clases :
+-enlaces
+*/
+
+/*
+a{
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+!*active funciona cuando alguien hace click en el*!
+a:active{
+    color: orange;
+}
+
+!*visited cuando alguien ya lo ha visitado*!
+a:visited{
+    color: hotpink;
+}
+
+!*Si queremos cuando el curso este en é tenga un estilo en especifico se usa el Focus*!
+a:focus{
+    background-color: lightblue;
+}
+*/
+
+/*Ejemplo Domestika*/
+a,
+a:visited{
+    color: blue;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:active{
+    color: orange;
+}
+
+a:focus{
+    background-color: lightgray;
+}
+
 
 
