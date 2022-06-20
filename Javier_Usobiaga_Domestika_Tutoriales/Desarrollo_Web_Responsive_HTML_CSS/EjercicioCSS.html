@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Introducción CSS</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<h1>Titulo</h1>
+<h2>Subtitulo</h2>
+
+<hr>
+<p>Un párrafo usan CSS genérico</p>
+
+<div class="contenedor">
+    <p>Texto Contenido modifica por una clase en el Div que lo contiene</p>
+    <!-- Contenido -->
+</div>
+
+<hr>
+<div class="principal">Clase aplicada a diferentes elementos</div>
+<p class="principal">Clase aplicada a diferentes elementos</p>
+
+<hr>
+<div class="principal">
+    <p>Clase aplicada a diferentes elementos</p>
+    <ul><li>tata</li></ul>
+</div>
+<hr>
+
+<div class="principal">
+    <p>Clase aplicada a diferentes elementos <span>solo esto cambia con span</span></p>
+</div>
+
+<hr>
+
+<div id="contacto">
+    ID Contenido Contacto
+</div>
+
+<hr>
+
+<h1>Estilos tipográficos</h1>
+<p>En un diseño web, el tratamiento tipográfico es fundamental para encontrar un tono de voz y transmitir adecuadamente un mensaje. Tamaño, peso, altura de línea o colo</p>
+
+<h2>Font-size:</h2>
+<p>El font size es el único atributo que se hereda, si el div tiene por ejemplo 20 px el contenido de este lo heredara</p>
+
+<p> Medidas:</p>
+
+<p> Pixel es la mas habitual.</p>
+<p>Em es una unidad relativa al font-size heredado. Por ejemplo, si decimos que nuestro Párrafo tenga 1.5em, es decir, 1.5 veces el tamaño heredado. Si el div tiene 20 px. El párrafo tendrá 1.5 veces los 20 pixeles, es decir, treinta pixeles. </p>
+
+<h2>Font-weight:</h2>
+<p>Es el peso tipográfico, por ejemplo el <span class="fw-bold">font-weight: bold,</span> carga la version negrilla. Si se quiere resetear se puede usa <span class="fw-normal">font-weight: normal.</span></p>
+<p>También se puede especificar el peso con números: <span class="fw-number">font-weight: 200, 400, 600...</span> se denomina peso equivalente.  </p>
+<p class="fs-it">font-style: italic carga la cursiva </p>
+
+<p class="fs-normal">font-style: normal resetea los estilos</p>
+
+<h2 class="td-underline">Para subrayar una tipografía se usa el text-decoration : underline</h2>
+<h2 class="td-lineT">Para tachar una tipografía se usa el text-decoration : line-through</h2>
+<h2 class="td-none">Para resetear text-decoration : none</h2>
+
+<hr>
+
+<h1>Altura de linea : line-height</h1>
+<div class="ejemploAlturaLinea">
+    <h2>line-height : 1.5,</h2>
+    <p>Se puede establecer en unidades absolutas como píxeles o, en este caso, se nos permite una unidad relativa al tamaño tipográfico, por lo tanto no hace falta especificar nada sino que podemos poner 1.5. Que significa 1.5 veces el tamaño asignado tipográfico.</p>
+</div>
+
+<hr>
+ <h1>Aplicar color:</h1>
+
+<h2>Palabra clave </h2>
+<p>Colores asignados a palabras clave en inglés, como red, orange, black, white o pink. </p>
+<p class="color-palabra">Ejemplo: Este texto tiene aplicado color: hotpink;</p>
+
+<h2>Hexadecimal</h2>
+<p>Los colores hexadecimales se preceden con #, como por ejemplo: #000000 (negro),
+    #FFFFFF (blanco), #FF0000 (rojo). </p>
+<p class="color-hexadecimal">Ejemplo: Este texto tiene aplicado color: #FF0000;</p>
+
+<h2>rgb</h2>
+<p>La declaración rgb se pone entre paréntesis (sin espacio entre los paréntesis y la
+    palabra rgb), y se declara de 0 a 255 los valores de rojo, verde y azul. Ejemplo:
+    rgba(255, 0, 0)</p>
+<p class="color-rgb">Ejemplo: Este texto tiene aplicado color: rgba(255, 0, 0);</p>
+
+<h2>rgba</h2>
+<p>La declaración de rgba es similar a rgb, pero se añade un cuarto valor, en base a 1,
+    que indica la opacidad. Ejemplo: rgba(0, 0, 0, 0.4)</p>
+<p class="color-rgba">Ejemplo: Este texto tiene aplicado color: rgba(255, 0, 0, 0.4);</p>
+
+
+
+
+
+</body>
+</html>

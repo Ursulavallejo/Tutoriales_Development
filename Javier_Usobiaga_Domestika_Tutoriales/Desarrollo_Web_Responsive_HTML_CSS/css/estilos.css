@@ -1,0 +1,122 @@
+
+/* comentarios de CSS*/
+
+h1{
+    font-size: 24px;
+    color: red;
+}
+
+h2, h3{
+    font-size: 22px;
+}
+
+/* afecta a todas las tag genéricas y puede causar luego problemas*/
+p{
+    color: purple;
+}
+
+/* Las clases se utilizan para afectar solo a ese elemento*/
+
+.contenedor{
+    color: purple;
+}
+
+/* cuando usan la misma clase en diferentes elementos para ser mas especifico:*/
+
+div.principal{
+    color: green;
+}
+
+.principal p{
+    color: green;
+}
+
+.principal ul{
+    color: purple;
+}
+
+/* dos ejemplos con SPAN:*/
+
+/* Esta afecta de maneja mas general:*/
+
+/*.principal span{
+    color: deeppink;
+}*/
+
+/* Este es mas especifico:*/
+
+.principal p span{
+    color: deeppink;
+}
+
+/* Usando ID:*/
+
+#contacto{
+    color: blue;
+}
+
+/* Para que afecte a todos los elementos del HTML se usa el asterisco */
+*{
+   margin-left: 30px;
+}
+
+/* Estilos Tipográficos:*/
+
+.fw-bold{
+    font-weight: bold;
+}
+
+.fw-normal{
+    font-weight: normal;
+}
+
+.fw-number{
+    font-weight: 600;
+}
+
+.fs-it{
+    font-style: italic;
+}
+
+.fs-normal{
+    font-style: normal;
+}
+
+/* Para subrayar una tipografía:*/
+.td-underline {
+    text-decoration: underline;
+}
+
+.td-lineT{
+    text-decoration: line-through;
+}
+
+.td-none{
+    text-decoration: none;
+}
+/* Para la altura :*/
+
+.ejemploAlturaLinea{
+    line-height: 1.5;
+}
+
+/* Aplicar color :*/
+
+.color-palabra{
+    color: hotpink;
+}
+
+.color-hexadecimal{
+    color: #FF0000;
+}
+
+.color-rgb{
+    color:  rgb(255, 0, 0);
+}
+
+.color-rgba{
+    color:  rgb(255, 0, 0, 0.4);
+}
+
+
+
