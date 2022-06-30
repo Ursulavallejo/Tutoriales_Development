@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Decoración en CSS</title>
+    <link rel="stylesheet" href="css/estilosU5.css">
+</head>
+<body>
+
+<h1>Decoración en CSS</h1>
+<p>Estilos para listas, bordes, esquinas redondeadas, sombras, fondos y webfonts.</p>
+
+<h1>* Estilos para listas </h1>
+
+<h2>* Ejemplo 1: List-style-type: none, para que no tener ningún tipo de bullet ni similar. </h2>
+<h2>Receta de Pan</h2>
+<h3>Ingredientes:</h3>
+<ul class="lista1">
+    <li>Agua</li>
+    <li>Harina</li>
+    <li>Levadura</li>
+    <li>Sal</li>
+</ul>
+
+<h2>* Ejemplo 2: List-style-type: (disc, square, upper-latin< letras ABC en mayúsculas >). Son diferentes opciones de
+    bullet. </h2>
+<h2>Receta de Pan</h2>
+<h3>Ingredientes:</h3>
+<ul class="lista2">
+    <li>Agua</li>
+    <li>Harina</li>
+    <li>Levadura</li>
+    <li>Sal</li>
+</ul>
+<ul class="lista3">
+    <li>Agua</li>
+    <li>Harina</li>
+    <li>Levadura</li>
+    <li>Sal</li>
+</ul>
+<ul class="lista4">
+    <li>Agua</li>
+    <li>Harina</li>
+    <li>Levadura</li>
+    <li>Sal</li>
+</ul>
+
+<h1>Otra cosa que podemos hacer es decir al navegador dónde se renderiza los "bullets", si dentro de la estructura del
+    UL o fuera de este.</h1>
+<p>Usaremos la propiedad List-style-position: inside / outside; dentro del ul / fuera del ul</p>
+<p>Outside es lo que viene por defecto configurado.</p>
+
+<h2>Inside:</h2>
+<ul class="position1">
+    <li>Agua</li>
+    <li>Harina</li>
+    <li>Levadura</li>
+    <li>Sal</li>
+</ul>
+
+<h2>Outside:</h2>
+<ul class="position2">
+    <li>Agua</li>
+    <li>Harina</li>
+    <li>Levadura</li>
+    <li>Sal</li>
+</ul>
+<hr>
+<h1>Si estamos trabajando con algún tipo de navegación nos interesa no tener ningún bullet y aplicar inline-block</h1>
+
+<ul class="menuNavegacion">
+    <li>Home</li>
+    <li>Informacion</li>
+    <li>Contacto</li>
+    <li>Ventas</li>
+</ul>
+
+<hr>
+<h1>* Border, border-radius y box-shadow</h1>
+
+<h2>Border:</h2>
+<div class="cajaG caja1">Solid</div>
+<div class="cajaG caja2">Dashed</div>
+<div class="cajaG caja3">Dotted</div>
+
+<h2>Border-radius:</h2>
+<p>Acepta valores para cada esquina.</p>
+
+<div class="cajaG2 caja1BR"></div>
+<div class="cajaG2 caja2BR"></div>
+<div class="cajaG2 caja3BR"></div>
+<div class="cajaG2 caja4BR"></div>
+
+
+<h2>Box-shadow:</h2>
+<p>Puede tener varios valores ( positivos y negativos).</p>
+<p> box- shadow : X Y difuminado color;</p>
+<p>Se puede agregar color con rgba. </p>
+<p>Se le puede agregar espaciado (como herramienta de dibujo es interesante). // box- shadow : X Y difuminado espaciado color</p>
+<p>Inset: renderiza la sombra dentro de la caja// box- shadow : inset X Y difuminado espaciado color.</p>
+<p>Se puede declarar varias sombras para un mismo elemento si se separan con comas.</p>
+
+<div class="cajaG3 caja1BS">Simple</div>
+<div class="cajaG3 caja2BS">RGBA</div>
+<div class="cajaG3 caja3BS">Espaciado</div>
+<div class="cajaG3 caja4BS">Inset</div>
+<div class="cajaG3 caja5BS">2 Colores Sombra</div>
+
+<hr>
+<h1>* Fondos e imágenes de fondo</h1>
+ <h2>background-color</h2>
+<h2>Fondo de color:</h2>
+<p> Se utiliza background-color para poner un color base al elemento.</p>
+
+<div class="cajaG4">Background color</div>
+
+<h2>background-image</h2>
+<p> Para agregar una imagen se utiliza background-image. Por ejemplo si se pone en una superficie muy grande esta se repetirá, para que no pase esto se utiliza:< background-repeat: no-repeat >.</p>
+<div class="cajaG5">Imagen fondo</div>
+<br>
+<h2>Background-position</h2>
+<p> * Background-position: right top (o también por pixeles); corresponde izquierda arriba)// para posicionar la imagen dentro de alguna parte del body</p>
+<p>background-position: 20px 30px //corresponde izquierda arriba </p>
+<br>
+<p> background-position:  right 20px bottom 30px; Para posicionar desde la derecha</p>
+<br>
+<h2>Background</h2>
+<p> La propiedad Background agrupa todas las anteriores / background: hotpink url(img/..) no-repeat right top //  </p>
+<p>La imagen aparecerá con su tamaño, pero se puede modificar con: background-size: X Y </p>
+
+<br>
+<p>Ejemplo de background dentro de un div:</p>
+ <div class="background1"></div>
+
+<br>
+<h2>background-size: contain</h2>
+<p>A veces no queremos que las imágenes se redimensionen en un tamaño concreto, sino que tomen el tamaño de su contenedor. Para esto utilizamos la propiedad: background-size: contain.</p>
+<p>Quiere decir que la imagen se contenga completamente dentro de su contenedor.</p>
+
+<p>Ejemplo de imagen background dentro de su contenedor: /background-size: contain/</p>
+<div class="background2"></div>
+<br>
+
+<h2>background-size: cover</h2>
+<p>Se utiliza cuando queremos que la imagen cubra completamente el contenedor</p>
+
+<p>Ejemplo de imagen background dentro de su contenedor: /background-size: cover/</p>
+<div class="background3"></div>
+
+<hr>
+<h1>* Webfonts</h1>
+<h2>font-family</h2>
+<p>Si trabajamos con tipografías del sistema podemos asignar un stack (orden de preferencia de tipografías)</p>
+<p>font-family: Arial, Helvetiva, sans-serif  / tipografías sin remates ( adorno)</p>
+<p>Si tenemos un nombre de tipografía que tiene espacios se pone con comillas / font-family: "Time New Roman" , serif / tipografía con remates</p>
+<br>
+<p class="font1">Ejemplo de Letra en el texto</p>
+
+<br>
+
+<p class="font2">Webfonts @Font-face en el CSS</p>
+<p>Woff es el formato estándar y los navegadores modernos lo soportan.</p>
+<p>Si nos preocupan los navegadores antiguos se pueden incluir varios tipos de formato separándolos con comas entre si. (Ejemplo en el css file)</p>
+<p>Una vez he llamado la tipografía como un archivo externo y le he dado un nombre de familia, la puedo llamar en el resto de mi CSS, asignándola con la propiedad font-family</p>
+<br>
+
+<h2>Tipografías comerciales: ( pago)</h2>
+
+<a href="https://fonts.adobe.com/" target="_blank">TypeKit de Adobe</a>
+<a href="https://www.fonts.com/" target="_blank">Fonts.com</a>
+<a href="https://www.typography.com/" target="_blank">Hoefler&Co</a>
+<a href="https://www.myfonts.com/" target="_blank">My Fonts</a>
+
+<h2>Tipografías comerciales: ( gratuitas)</h2>
+
+
+<p>En google fonts se puede poner un link directo y se descargan desde el servidor de ellos.</p>
+<a href="https://fonts.google.com/">Google Fonts</a>
+
+</body>
+</html>

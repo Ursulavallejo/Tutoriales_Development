@@ -1,0 +1,52 @@
+
+/* estilos del ejercicio de cajas*/
+
+/*general*/
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    background-color:darkseagreen;
+    margin: 20px;
+}
+
+div{
+    margin-bottom: 20px;
+}
+
+.grlColor{
+    background-color: darkslateblue;
+}
+
+/*columnas*/
+
+.caja1{
+    width: 100%;
+    height: 100px;
+}
+.caja2, .caja5{
+    width: 100%;
+    height: 300px;
+}
+
+.contenedor1, .contenedor2{
+    overflow: hidden;
+    margin: 0;
+}
+
+.caja3, .caja4, .caja6, .caja7{
+    width: 49%;
+    height: 300px;
+}
+.caja4, .caja7{
+    margin-left:20px;
+}
+.caja6, .caja7{
+    margin-bottom: 0;
+}
+
+.contenedor1 div, .contenedor2 div{
+    float: left;
+}

@@ -1,0 +1,244 @@
+
+/*Ejemplo 1 de Lista */
+
+.lista1{
+    list-style-type: none;
+}
+
+/*Ejemplo 2 de Lista */
+
+.lista2{
+    list-style-type: square;
+}
+.lista3{
+    list-style-type: circle;
+}
+.lista4{
+    list-style-type: upper-latin;
+}
+
+/*posición en el Ul de las li*/
+
+.position1{
+    list-style-position: inside;
+}
+
+/*esta esta por defecto pero la escribo como referencia*/
+.position2{
+    list-style-position: outside;
+}
+
+
+/*estilos generales lista*/
+
+.position1 ul{
+    padding-left: 0;
+}
+
+.menuNavegacion ul{
+    list-style-type: none;
+}
+
+.menuNavegacion li{
+    display: inline-block;
+}
+
+/*bordes*/
+
+
+/* esta 3 propiedades se pueden resumir en una sola que veremos luego:
+.caja{
+    border-width: 5px;
+    border-style: solid;
+    border-color: #389F85;
+}
+ */
+
+.caja{
+    border: 5px solid #389F85;
+}
+
+/*tiene 4 bordes por lo cual se podrían definir asi: ( luego se ve  como se resumen)*/
+
+.cajaG {
+    background-color: pink;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    display: inline-block;
+}
+.cajaG{
+    border-top-width: 5px;
+    border-right-width: 10px;
+    border-bottom-width: 5px;
+    border-left-width: 2px;
+}
+
+.caja1{
+    border: 5px solid black;
+}
+
+.caja2{
+    border: 5px dashed black;
+}
+
+.caja3{
+    border: 5px dotted black;
+}
+
+/*Border radius*/
+
+.cajaG2{
+    background-color: lightsalmon;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    display: inline-block;
+}
+
+.caja1BR{
+    border-radius: 20px;
+}
+
+.caja2BR{
+    border-radius: 20px 50px;
+}
+
+.caja3BR{
+    border-radius: 10px 20px 50px 30px;
+}
+.caja4BR{
+    border-radius: 50%;
+}
+
+/*
+.caja3BR{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 50px;
+}
+*/
+
+/*Sombras / box-shadow*/
+
+.cajaG3{
+    background-color: lightgreen;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+
+}
+
+.caja1BS{
+    box-shadow: 5px 5px 10px black;
+}
+
+.caja2BS{
+    box-shadow: 5px 5px 10px rgba(0,0,0,.4);
+}
+
+.caja3BS{
+    box-shadow: 5px 5px 10px 8px black;
+}
+
+.caja4BS{
+    box-shadow: inset 5px 5px 10px 8px black;
+}
+
+.caja5BS{
+    box-shadow: 5px 5px 10px black,
+    -5px -5px 10px red;
+}
+
+/*Fondos e imágenes de fondo*/
+
+.cajaG4{
+    background-color: lightblue;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+}
+
+.cajaG5{
+    background-image: url("../img/baskiat.png");
+    width: 400px;
+    height: 500px;
+    margin: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+}
+
+body{
+    background-image: url("../img/baskiat.png");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 200px auto;
+    /*background-position: 20px 30px;*/
+/*    background-position:  right 20px
+                          bottom 30px;*/
+}
+
+.background1{
+    width: 400px;
+    height: 600px;
+    border: 1px solid;
+    background-image: url("../img/baskiat.png");
+    background-repeat: no-repeat;
+    /*background-size: 200px auto; */
+    /*background-size: 100% auto;*/
+    background-size:  auto 100%;
+}
+
+.background2{
+    width: 400px;
+    height: 600px;
+    border: 1px solid;
+    background-image: url("../img/baskiat.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.background3{
+    width: 400px;
+    height: 600px;
+    border: 1px solid;
+    background-image: url("../img/baskiat.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Fuentes de texto*/
+
+.font1{
+    font-family: "Comic Sans MS", sans-serif;
+}
+
+@font-face{
+    font-family: Lobster;
+    src: url("fonts/lobster.woff")
+format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* si queremos agregar varias familias para soportar por ejemplo navegadores antiguos*/
+
+@font-face{
+    font-family: Lobster;
+    src: url("fonts/lobster.woff")
+    format("woff"),
+    url("fonts/lobster.ttf")
+    format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+

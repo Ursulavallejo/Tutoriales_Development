@@ -86,3 +86,117 @@ div{
 *{
     box-sizing: border-box;
 }
+
+/* ejemplo displays */
+
+.div-ejemplo{
+    background-color: pink;
+    padding: 10px;
+    margin-bottom: 30px;
+    font-size: 30px;
+    display: inline-block;
+}
+
+span{
+    background-color: orange;
+    font-size: 25px;
+    display: block;
+}
+
+/* Floats */
+.float_div1 {
+    background-color: cadetblue;
+    width: 10px;
+}
+
+.float_div2{
+    background-color: orange;
+    width: 10px;
+}
+
+.ejemploFloatL div{
+    float: left;
+}
+
+.ejemploFloatN div{
+    float: none;
+}
+
+.ejemploFloatR div{
+    float: right;
+}
+/* Ejemplo floats con texto */
+
+.parrafo{
+    float: left;
+    width: 50%;
+}
+
+
+/*para que no colapse el div se aplica el overflow hidden*/
+
+.ejemploFloatsU4{
+    overflow: hidden;
+    background-color: antiquewhite;
+    border: 1px solid;
+
+}
+
+/*Position*/
+
+.position_ejemplo {
+    background-color: pink;
+    width: 200px;
+}
+
+.position_ejemplo p{
+    border: 1px solid;
+    font-size: 20px;
+    width: 150px;
+}
+
+/* se posicionara en la esquina superior izquierda o en el sitio se le indiquen las coordenadas en relación con el navegador..*/
+.position_ejemplo span{
+    background-color: orangered;
+    font-size: 20px;
+    width: 100px;
+    position: absolute;
+    /* left: 0;
+     top: 0;
+     bottom: 0;*/
+}
+
+/*Position en relación con un contenedor no con el navegador*/
+.position_ejemplo2 {
+    background-color: pink;
+    width: 200px;
+}
+
+.position_ejemplo2 p{
+    border: 1px solid;
+    font-size: 20px;
+    width: 150px;
+}
+
+.position_ejemplo2{
+    position: relative;
+}
+
+.position_ejemplo2 span{
+    background-color: orangered;
+    font-size: 20px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+span{
+    z-index: 1;
+}
+
+.alt{
+    background-color: lightgreen;
+    z-index:0;
+}

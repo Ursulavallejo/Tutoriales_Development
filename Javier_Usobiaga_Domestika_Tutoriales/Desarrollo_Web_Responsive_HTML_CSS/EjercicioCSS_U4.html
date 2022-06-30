@@ -23,6 +23,106 @@
 <p>modelo de caja tradicional la anchura de caja = width + padding + border</p>
 <p> Para evitar esto tenemos que cambiar el modelo de caja y resetearla con el Box-sizing: border-box </p>
 <p>asi la anchura total sera el width</p>
+<hr>
+
+<h1>Displays</h1>
+<p>La propiedad display nos permite mostrar u ocultar elementos, pero también cambiar la forma en la que un elemento se muestra, como puede ser que una etiqueta de línea se comporte como un bloque y viceversa. </p>
+<p> display : none / ocultaremos el elemento</p>
+<p> display : inline / haremos que un elemento de bloque se comporte como un elemento de línea</p>
+<p> display : block / haremos que un elemento de línea se comporte como un elemento de bloque</p>
+<p> display : inline-block / se comportará como un elemento de línea en el sentido de que no provoca un salto de línea, pero aceptara algunas propiedades típicas de un bloque, como márgenes superiores e inferiores o altura</p>
+<br>
+
+<div class="div-ejemplo">Ejemplo de DIV</div>
+
+<span>Un ejemplo de span</span>
+<span>Otro ejemplo de span</span>
+
+<hr>
+
+<h1>* Floats</h1>
+
+<p>La propiedad float es una herramienta fundamental para crear retículas. Nos permite que dos bloques se coloquen el uno al lado del otro, sin provocar saltos de línea. Sin embargo, los bloques que flotan no se llevan del todo bien con los elementos que no flotan, así que es necesario que se combinen con otras técnicas.</p>
+
+<h2>-Overflow : hidden </h2>
+<p>Si ponemos esta propiedad al contenedor, el contenido que lo sobrepase quedará oculto.</p>
+
+<h2>-Overflow : scroll </h2>
+<p>Este provocará un scroll, es decir, saldrán barras de scroll cuando el contenido sobrepase al contenedor y se podrá scrollear dentro de este contenedor.</p>
+
+<h2>-Overflow : auto </h2>
+<p>en principio deja al navegador elegir cuándo aplicar un scroll, pero en la práctica es similar a Overflow : scroll. </p>
+
+<h2>-Overflow : visible </h2>
+<p>Permite resetear al estado inicial</p>
+
+<h2>-Float : left </h2>
+<p>Para que un bloque se sitúe al lado de otro bloque</p>
+
+
+<div class="ejemploFloatL">
+    <p>*Ejemplo Float left</p>
+    <div class="float_div1">< div ></div>
+    <div class="float_div2">< div ></div>
+</div>
+
+<br>
+
+<div class="ejemploFloatN">
+    <p>*Ejemplo Float None</p>
+    <div class="float_div1">< div ></div>
+    <div class="float_div2">< div ></div>
+</div>
+
+<br>
+
+<div class="ejemploFloatR">
+    <p>*Ejemplo Float Right: cambia de posición el div</p>
+    <div class="float_div1">< div ></div>
+    <div class="float_div2">< div ></div>
+</div>
+<br>
+<div class="ejemploFloatN">
+    <H2>*  Ejemplo para poder poner el texto en dos columnas.</H2>
+    <p>para que no colapse el div se aplica el overflow hidden en el contenedor. Asi se limpian los floats y se puede tener la estructura de 2 columnas sin que afecte el resto de la estructura</p>
+
+</div>
+
+<div class="ejemploFloatsU4">
+
+    <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ex, maiores! Aliquid amet aspernatur consectetur consequatur eaque harum magni maxime minima neque non obcaecati quidem ratione rem, repellat sed sit? Aperiam facilis fuga fugiat libero perspiciatis. Alias aperiam cupiditate, ea, ex harum molestias numquam officiis perspiciatis qui quisquam, quos suscipit ullam! A aperiam at dolorem et harum, porro tempore veritatis. Nobis nostrum porro repellendus? Amet aperiam facilis illo incidunt nihil non odio quaerat quia quod soluta. A architecto impedit ipsam iusto perferendis perspiciatis tenetur? Dolores in natus provident quia sed. Alias debitis dicta distinctio dolorum eligendi, eos et explicabo harum id ipsum nisi officiis optio quae, quibusdam rem sint sit. Alias distinctio ducimus eius laboriosam nostrum reprehenderit tempora totam voluptatum.</p>
+    <p class="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur ex, maiores! Aliquid amet aspernatur consectetur consequatur eaque harum magni maxime minima neque non obcaecati quidem ratione rem, repellat sed sit? Aperiam facilis fuga fugiat libero perspiciatis. Alias aperiam cupiditate, ea, ex harum molestias numquam officiis perspiciatis qui quisquam, quos suscipit ullam! A aperiam at dolorem et harum, porro tempore veritatis. Nobis nostrum porro repellendus? Amet aperiam facilis illo incidunt nihil non odio quaerat quia quod soluta. A architecto impedit ipsam iusto perferendis perspiciatis tenetur? Dolores in natus provident quia sed. Alias debitis dicta distinctio dolorum eligendi, eos et explicabo harum id ipsum nisi officiis optio quae, quibusdam rem sint sit. Alias distinctio ducimus eius laboriosam nostrum reprehenderit tempora totam voluptatum.</p>
+
+</div>
+
+<hr>
+<h1>* Position con el navegador:</h1>
+<p>La mayor parte de las veces, que un bloque se ponga debajo de otro ya nos viene bien. En otras ocasiones, con flotar los elementos será suficiente. Pero a veces, lo que necesitamos es que un elemento salga del flujo natural de la página y se posicione de manera absoluta en alguna parte de la ventana del navegador. Para eso vamos a usar la propiedad position.</p>
+<p>Se posicionará en la esquina superior izquierda o en el sitio se le indiquen las coordenadas en relación con el navegador.</p>
+
+<div class="position_ejemplo">
+    <p>Un párrafo</p>
+    <span>Un span</span>
+</div>
+<br>
+<hr>
+
+<h1>* Position con relación a un contenedor y no con el navegador:</h1>
+<p>La solución es que el contenedor tenga "position:relative". De esta manera, un elemento posicionado absolutamente cogerá de referencia el elemento contenedor más cercano que tenga "position:relative".En este caso el Span toma como referencia el div y no el navegador.</p>
+
+<div class="position_ejemplo2">
+    <p>Un párrafo</p>
+    <span>Un span</span>
+</div>
+
+<p>Cuando tenemos dos span con la misma posición se sobreponen. Para solucionarlo se usa z-index</p>
+<p>En caso de solapamiento el elemento que tenga un z-index mayor aparece en primer lugar, y el elemento con uno menor, en este caso 0, aparece justo debajo.ove</p>
+<div class="position_ejemplo2">
+    <p>Un párrafo</p>
+    <span>Un span</span>
+    <span class="alt">Otro span</span>
+
+</div>
 
 </body>
 </html>
