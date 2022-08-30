@@ -1,0 +1,52 @@
+.contactoEmail {
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 10px;
+    max-width: 200px;
+}
+
+a{
+    color: blue;
+}
+
+a:hover{
+color: hotpink;
+}
+
+a{
+    transition: 1s color;
+}
+
+.divColor{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    transition: 1s background-color 2s;
+    margin-right: 10%;
+}
+
+.divColor:hover{
+    background-color: blue;
+}
+
+img{
+    opacity: 0.5;
+    transition: 0.5s opacity;
+}
+
+img:hover{
+    opacity: 1;
+}
+
+.divTransicion {
+    max-height: 30px;
+    overflow: hidden;
+    transition: 0.5s max-height;
+    background-color: lightgoldenrodyellow;
+}
+
+.divTransicion {
+    max-height: 400px;
+}
+
+
