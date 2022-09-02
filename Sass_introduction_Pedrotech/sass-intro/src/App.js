@@ -1,10 +1,12 @@
 import Navbar from "./Components/Navbar";
+import MainPage from "./Components/MainPage";
 
 function App() {
     return (
         <div className="App">
             <Navbar/>
-            <h1>Hey World!</h1>
+            <MainPage/>
+            <button>Click Here</button>
         </div>
     );
 }

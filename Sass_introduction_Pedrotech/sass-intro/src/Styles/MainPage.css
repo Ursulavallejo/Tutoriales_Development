@@ -1,0 +1,50 @@
+/*
+@mixin buttonStyle {
+  width: 200px;
+  height: 40px;
+  background-color: $redColor;
+  border: none;
+  border-radius: 8px;
+  color: $whiteColor;
+  font-size: 25px;
+}
+*/
+.mainPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainPage h1 {
+  color: rgb(238, 12, 12);
+}
+.mainPage button {
+  width: 200px;
+  height: 40px;
+  background-color: rgb(238, 12, 12);
+  border: none;
+  border-radius: 8px;
+  color: #ece6e6;
+  font-size: 35px;
+}
+
+/*
+button {
+  @include buttonStyle();
+}
+*/
+/*
+button {
+  @include buttonStyle($redColor, 35px);
+}
+*/
+button {
+  width: 200px;
+  height: 40px;
+  background-color: purple;
+  border: none;
+  border-radius: 8px;
+  color: #ece6e6;
+  font-size: 205px;
+}
+
+/*# sourceMappingURL=MainPage.css.map */

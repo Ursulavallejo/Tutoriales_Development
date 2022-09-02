@@ -13,17 +13,3 @@ T
 $react-gql/src/hooks/useCharacters.js,a\8\a8711fb6762c801176df29094c2d95f133fc6ff5
 Q
 !react-gql/src/pages/Character.css,1\6\164f772d6822289d4aa7ec883cf70369ecd73482
-F
-react-gql/src/index.js,0\9\091c6e450685d30710b330d171dd784669e4b3d7
-D
-react-gql/src/App.js,c\8\c8839cf9199e4fcf778ac510d68dafdb93ca9004
-P
- react-gql/src/pages/Character.js,e\5\e5d10efe44d9e335083f37ace80efc4979c821f2
-M
-react-gql/src/pages/Search.js,0\5\0543b3ae1fdc4283610b730f4d42227d1644d493
-S
-#react-gql/src/hooks/useCharacter.js,3\c\3c84c963a61b57efe96ae75e89e884e3d69f8b62
-U
-%react-gql/src/pages/CharactersList.js,3\4\3463f1201b4b3dbd3f080f94271b3a458368a80c
-O
-react-gql/src/pages/Mutation.js,0\8\08e2c3e615cfe2b9055f091187301fcdf2ddf82f

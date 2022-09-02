@@ -1,2 +1,37 @@
+// COLORS
+
 $blackColor: rgb(24, 24, 24);
 $whiteColor: #ece6e6;
+$redColor: rgb(238, 12, 12);
+
+
+// FONTS
+$titleFont:Arial, Helvetica, sans-serif;
+$bodyFont:"Times New Roman", Times, serif;
+
+
+// 1st Example :
+
+/*
+@mixin buttonStyle {
+  width: 200px;
+  height: 40px;
+  background-color: $redColor;
+  border: none;
+  border-radius: 8px;
+  color: $whiteColor;
+  font-size: 25px;
+}
+*/
+
+// 2nd Example including a variable :
+
+@mixin buttonStyle ($color, $fontSize) {
+  width: 200px;
+  height: 40px;
+  background-color: $color;
+  border: none;
+  border-radius: 8px;
+  color: $whiteColor;
+  font-size: $fontSize;
+}
